@@ -117,3 +117,10 @@ console says how many).
 - Popups, modals and cookie banners (fixed elements covering >25% of the
   viewport) are hidden before measuring.
 - `test/fixture.html` has known gaps (24px, 16px, 84px) for checking accuracy.
+
+
+### Screenshoots
+
+<img src="images/annotated.png" alt="annotated">
+<img src="images/fonts.png" alt="fonts">
+<img src="images/highlighted.png" alt="highlighted">
