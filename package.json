@@ -1,0 +1,21 @@
+{
+  "name": "spacing-measure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "measure": "measure.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "measure": "node measure.js",
+    "measure-image": "node measure-image.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "playwright": "^1.64.0"
+  }
+}
