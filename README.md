@@ -36,18 +36,18 @@ Screenshots are taken at `deviceScaleFactor: 1`, so 1 screenshot pixel = 1 CSS p
 
 Examples:
 
-    measure https://lumet.ro
-    measure https://lumet.ro --width 390 --out rezultate/mobil
-    measure https://lumet.ro --scope "footer" --max-gap 80 --min-gap 0
-    measure https://lumet.ro --wait 2000 --wait-for ".product-list" --all
+    measure <url>
+    measure <url> --width 390 --out rezultate/mobil
+    measure <url> --scope "footer" --max-gap 80 --min-gap 0
+    measure <url> --wait 2000 --wait-for ".product-list" --all
 
 ## Pages that need a session (cart, checkout, account)
 
 The measuring browser starts with no cookies, so the cart is empty and you
 are logged out. Save a session once, then reuse it:
 
-    node session.js https://lumet.ro          # browser opens: add to cart / log in, then Enter
-    measure https://lumet.ro/checkout/cart/ --session session.json
+    node session.js <url>          # browser opens: add to cart / log in, then Enter
+    measure <url> --session session.json
 
 `session.json` holds your cookies (including login), so do not share it.
 
@@ -119,8 +119,8 @@ console says how many).
 - `test/fixture.html` has known gaps (24px, 16px, 84px) for checking accuracy.
 
 
-### Screenshoots
+### Screenshots
 
-<img src="images/annotated.png" alt="annotated">
-<img src="images/fonts.png" alt="fonts">
-<img src="images/highlighted.png" alt="highlighted">
+<img src="results/annotated.png" alt="annotated">
+<img src="results/fonts.png" alt="fonts">
+<img src="results/highlighted.png" alt="highlighted">   
